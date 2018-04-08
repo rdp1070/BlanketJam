@@ -22,13 +22,9 @@ public class FianlSceneManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Textbox.text = TextImporter.GetCurrentLine();
-	}
 
-    private void OnMouseUp()
-    {
-        Debug.Log("This has been clicked.");
-        TextImporter.NextLine();
-    }
+        var line = TextImporter.GetCurrentLine();
+        Textbox.text = line;
+	}
 
 }

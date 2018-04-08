@@ -1,6 +1,6 @@
-Blanket: I’m sorry… 
-Player: For what? 
-Blanket: For being such a disappointment to you.
-Player: You’re not a disappointment/It would help if you did more for yourself 
-Blanket: I know you’re right...I’m such a failure…
-Blanket: ….. 
+This is a test text file
+this is a new line
+TEST: Short
+Memes: this is a very very very long line, that may run over the end of the screen
+Player: a e s t h e t i c
+[choice? | choice ] <end>

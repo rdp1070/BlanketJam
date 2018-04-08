@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
-
 public class InteractableObjectController : MonoBehaviour {
 
     public bool display_Interaction;

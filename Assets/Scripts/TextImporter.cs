@@ -31,6 +31,13 @@ public class TextImporter : MonoBehaviour
         if (currentLine + 1 < lineCount)
             currentLine++;
     }
-    
 
+    public void Update()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            Debug.Log("This has been clicked.");
+            NextLine();
+        }
+    }
 }
