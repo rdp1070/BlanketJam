@@ -14,11 +14,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Midground
+  - Characters
+  - Foreground
+  - Dialog
   - 
   - 
   - 
@@ -40,4 +40,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 854934391
+    locked: 0
+  - name: Midground
+    uniqueID: 4222210909
+    locked: 0
+  - name: Characters
+    uniqueID: 2607776201
+    locked: 0
+  - name: Foreground
+    uniqueID: 1684159143
+    locked: 0
+  - name: UI
+    uniqueID: 306422365
+    locked: 0
+  - name: Dialog
+    uniqueID: 1391431585
     locked: 0

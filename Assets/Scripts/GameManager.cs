@@ -5,26 +5,20 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public bool isTalking;
-    public bool canMove;
-    public string state;
-    public GameObject Player { get; set; }
-
-    // Use this for initialization
-    void Start()
-    {
-        isTalking = false;
-        canMove = true;
-    }
+    public TextBoxManager textBoxManager;
+    public PlayerManager playerManager;
+    public InteractableManager interactableManager;
 
     // Update is called once per frame
     void Update()
     {
-
-        if (isTalking == true)
-        {
-            canMove = false;
+        if (interactableManager.CheckForInteracting() == true) {
+            playerManager.SetState("dialog");
+            textBoxManager.textBox.SetActive(true);
+        } else if (interactableManager.CheckForInteracting() == false) {
+            playerManager.SetState();
+            textBoxManager.textBox.SetActive(false);
         }
-
     }
 }
+
