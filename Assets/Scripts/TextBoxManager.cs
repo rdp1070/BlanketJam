@@ -67,6 +67,20 @@ public class TextBoxManager : MonoBehaviour {
         }
     }
 
+    public void ShowChoices(ChoiceController[] choices) {
+        // write the display choice, and handle choice code
+
+        // then show the text box
+        EnableTextBox();
+
+        // display choice as dialog_choice_button 
+        // when that button is clicked
+        // deactivate the dialog box 
+        // play the choice controller scene
+
+
+
+    }
 
     public void EnableTextBox() {
         textBox.SetActive(true);

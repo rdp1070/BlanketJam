@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class ChoiceController : MonoBehaviour {
 
-    public string introText, outroText, sceneName;
-    public TextBoxManager textBoxManager;
+    public string option_name, scene_name;
 
     private void Start()
     {
-        if (textBoxManager == null) {
-            textBoxManager = FindObjectOfType<TextBoxManager>();
-        }
+        
     }
 
     // Update is called once per frame
@@ -21,5 +18,6 @@ public class ChoiceController : MonoBehaviour {
 
     public void SelectChoice()
     {
+        new MenuManager().GotoScene(scene_name);
     }
 }
