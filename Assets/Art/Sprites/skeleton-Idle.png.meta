@@ -1,0 +1,904 @@
+fileFormatVersion: 2
+guid: 0a22b65c81ca6084e95a2b3e30a91608
+timeCreated: 1523215072
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skeleton-Idle_0
+    21300002: skeleton-Idle_1
+    21300004: skeleton-Idle_2
+    21300006: skeleton-Idle_3
+    21300008: skeleton-Idle_4
+    21300010: skeleton-Idle_5
+    21300012: skeleton-Idle_6
+    21300014: skeleton-Idle_7
+    21300016: skeleton-Idle_8
+    21300018: skeleton-Idle_9
+    21300020: skeleton-Idle_10
+    21300022: skeleton-Idle_11
+    21300024: skeleton-Idle_12
+    21300026: skeleton-Idle_13
+    21300028: skeleton-Idle_14
+    21300030: skeleton-Idle_15
+    21300032: skeleton-Idle_16
+    21300034: skeleton-Idle_17
+    21300036: skeleton-Idle_18
+    21300038: skeleton-Idle_19
+    21300040: skeleton-Idle_20
+    21300042: skeleton-Idle_21
+    21300044: skeleton-Idle_22
+    21300046: skeleton-Idle_23
+    21300048: skeleton-Idle_24
+    21300050: skeleton-Idle_25
+    21300052: skeleton-Idle_26
+    21300054: skeleton-Idle_27
+    21300056: skeleton-Idle_28
+    21300058: skeleton-Idle_29
+    21300060: skeleton-Idle_30
+    21300062: skeleton-Idle_31
+    21300064: skeleton-Idle_32
+    21300066: skeleton-Idle_33
+    21300068: skeleton-Idle_34
+    21300070: skeleton-Idle_35
+    21300072: skeleton-Idle_36
+    21300074: skeleton-Idle_37
+    21300076: skeleton-Idle_38
+    21300078: skeleton-Idle_39
+    21300080: skeleton-Idle_40
+    21300082: skeleton-Idle_41
+    21300084: skeleton-Idle_42
+    21300086: skeleton-Idle_43
+    21300088: skeleton-Idle_44
+    21300090: skeleton-Idle_45
+    21300092: skeleton-Idle_46
+    21300094: skeleton-Idle_47
+    21300096: skeleton-Idle_48
+    21300098: skeleton-Idle_49
+    21300100: skeleton-Idle_50
+    21300102: skeleton-Idle_51
+    21300104: skeleton-Idle_52
+    21300106: skeleton-Idle_53
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 2926
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_18
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_19
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_20
+      rect:
+        serializedVersion: 2
+        x: 4180
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_21
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_22
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_23
+      rect:
+        serializedVersion: 2
+        x: 4807
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_24
+      rect:
+        serializedVersion: 2
+        x: 5016
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_25
+      rect:
+        serializedVersion: 2
+        x: 5225
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_26
+      rect:
+        serializedVersion: 2
+        x: 5434
+        y: 442
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_28
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_29
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_30
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_31
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_32
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_33
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_34
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_35
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_36
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_37
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_38
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_39
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_40
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_41
+      rect:
+        serializedVersion: 2
+        x: 2926
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_42
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_43
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_44
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_45
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_46
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_47
+      rect:
+        serializedVersion: 2
+        x: 4180
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_48
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_49
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_50
+      rect:
+        serializedVersion: 2
+        x: 4807
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_51
+      rect:
+        serializedVersion: 2
+        x: 5016
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_52
+      rect:
+        serializedVersion: 2
+        x: 5225
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton-Idle_53
+      rect:
+        serializedVersion: 2
+        x: 5434
+        y: 0
+        width: 209.07408
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

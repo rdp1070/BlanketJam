@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets._2D;
 
-public class TextBoxManager : MonoBehaviour {
+public class TextBoxManager : MonoBehaviour
+{
 
     public GameObject textBox;
 
@@ -14,6 +15,9 @@ public class TextBoxManager : MonoBehaviour {
     public TextAsset textFile;
     public string[] textLines;
     public int currentLine, endAtLine;
+    public bool isOver;
+
+    public ChoiceController[] choices;
 
     public GameObject player;
 
@@ -29,7 +33,8 @@ public class TextBoxManager : MonoBehaviour {
 
         }
 
-        if (endAtLine == 0) {
+        if (endAtLine == 0)
+        {
             endAtLine = textLines.Length - 1;
         }
 
@@ -37,24 +42,37 @@ public class TextBoxManager : MonoBehaviour {
 
     private void Update()
     {
-        // parse the line, then progress to the next one.
-        ParseLine();
-        if ( textBox.activeInHierarchy == true && Input.GetButtonDown("Action"))
+        if (choices == null || choices.Length <= 0)
         {
-            if (currentLine < endAtLine ) {
-                currentLine++;
-            }
-            else
+            // parse the line, then progress to the next one.
+            ParseLine();
+            if (textBox.activeInHierarchy == true && Input.GetButtonDown("Action"))
             {
+                if (currentLine < endAtLine)
+                {
+                    currentLine++;
+                }
+                else
+                {
+                    isOver = true;
+                    DisableTextBox();
+                }
+            }
+        }
+        else
+        {
+            ShowChoices(choices);
+
+            if (Input.GetButtonUp("cancel")) {
                 DisableTextBox();
             }
         }
-        
+
     }
 
-    private void ParseLine() {
+    private void ParseLine()
+    {
         var cur = textLines[currentLine];
-        Debug.Log(cur);
         if (cur.Contains(":") == false)
         {
             theSpeaker.text = "Unkown";
@@ -63,31 +81,68 @@ public class TextBoxManager : MonoBehaviour {
         else
         {
             theSpeaker.text = cur.Substring(0, cur.IndexOf(':'));
-            theDialog.text = cur.Substring(cur.IndexOf(':')+1);
+            theDialog.text = cur.Substring(cur.IndexOf(':') + 1);
         }
     }
 
-    public void ShowChoices(ChoiceController[] choices) {
-        // write the display choice, and handle choice code
-
-        // then show the text box
-        EnableTextBox();
-
-        // display choice as dialog_choice_button 
-        // when that button is clicked
-        // deactivate the dialog box 
-        // play the choice controller scene
-
-
-
+    public void ShowChoices(ChoiceController[] choices)
+    {
+        theDialog.enabled = false;
+        theSpeaker.enabled = false;
+        foreach (Button b in GetComponentsInChildren<Button>())
+        {
+            b.gameObject.SetActive(true);
+        }
+    }
+    public void HideChoices(ChoiceController[] choices)
+    {
+        theDialog.enabled = true;
+        theSpeaker.enabled = true;
+        
+        foreach (Button b in GetComponentsInChildren<Button>())
+        {
+            b.gameObject.SetActive(false);
+        }
     }
 
-    public void EnableTextBox() {
+    public void SetChoices(ChoiceController[] choices)
+    {
+        foreach (ChoiceController c in choices)
+        {
+            var butt = Instantiate<Button>(c.choicePrefab);
+            butt.GetComponentInChildren<Text>().text = c.option_name;
+            butt.transform.SetParent(textBox.transform);
+
+
+            //if (Application.CanStreamedLevelBeLoaded(c.scene_name))
+            //{
+                butt.onClick.AddListener(c.SelectChoice);
+            //} else {
+            //    butt.interactable = false;
+            //}
+        }
+    }
+
+
+    public void SelectChoice(ChoiceController c)
+    {
+        DisableTextBox();
+        c.SelectChoice();
+    }
+
+    public void EnableTextBox()
+    {
         textBox.SetActive(true);
     }
 
-    public void DisableTextBox() {
+    public void DisableTextBox()
+    {
         textBox.SetActive(false);
+    }
+
+    public bool CheckIfOver()
+    {
+        return isOver;
     }
 
 }

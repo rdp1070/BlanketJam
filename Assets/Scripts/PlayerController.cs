@@ -7,23 +7,16 @@ public class PlayerController : PlatformerCharacter2D
 {
 
     public bool canMove = true;
-    public bool isInteracting = true;
+    public bool isInteracting = false;
     public TextBoxManager choiceDialogBox;
-
-    public new void Move(float move, bool crouch, bool jump)
-    {
-        if (canMove == false || isInteracting == true) {
-            move = 0f;
-            choiceDialogBox.EnableTextBox();
-        }
-
-        base.Move(move, crouch, jump);
-    }
+    private InteractableObjectController currenInteractable;
 
     private void Interact(InteractableObjectController interactableObject)
     {
         interactableObject.interacting = true;
         isInteracting = true;
+        choiceDialogBox.SetChoices(currenInteractable.choices);
+        choiceDialogBox.EnableTextBox();
         Debug.Log("You're doing it fam, you're interacting.");
         // do all the stuff for the interacting.
         // this should be different for each object.
@@ -31,11 +24,9 @@ public class PlayerController : PlatformerCharacter2D
 
     private void EndInteract(InteractableObjectController interactableObject)
     {
-
         interactableObject.interacting = false;
         isInteracting = false;
         Debug.Log("You have done what you came to do.");
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -44,9 +35,8 @@ public class PlayerController : PlatformerCharacter2D
         if (interactableObject != null)
         {
             Debug.Log("Object Entered the InteractableObjectCollider for " + interactableObject.display_name);
-            interactableObject.display_Interaction = true;
-            interactableObject.SetInteractionText();
-            interactableObject.Display_Interaction_text(interactableObject.display_Interaction);
+            interactableObject.Display_Interaction_text(true);
+            currenInteractable = interactableObject;
         }
     }
 
@@ -55,26 +45,31 @@ public class PlayerController : PlatformerCharacter2D
         var interactableObject = other.GetComponentInParent<InteractableObjectController>();
         if (interactableObject != null)
         {
-            Debug.Log("Object Entered the InteractableObjectCollider for " + interactableObject.display_name);
-            interactableObject.display_Interaction = true;
-            interactableObject.SetInteractionText();
-            interactableObject.Display_Interaction_text(interactableObject.display_Interaction);
+            Debug.Log("Object Exited the InteractableObjectCollider for " + interactableObject.display_name);
+            interactableObject.Display_Interaction_text(false);
+            currenInteractable = null;
         }
 
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        var interactableObject = collision.GetComponentInParent<InteractableObjectController>();
-        // this is where we put the code for displaying the text above the sprite.
-        // Something to the effect of Press 'interact' button to interact. 
-        // then we trigger the dialouge related to that thing, and probably the animation as well.
-        if (Input.GetButtonUp("Action") && isInteracting != true && interactableObject != null)
+
+        if (Input.GetButtonUp("Action") && isInteracting != true && currenInteractable != null)
         {
             Debug.Log("Pressed Action while display Interaction is true");
             //do stuff if the the display_text is showing
-            Interact(interactableObject);
+            Interact(currenInteractable);
         }
 
+        if (canMove == false || isInteracting == true)
+        {
+            Debug.Log("can't move rn");
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+        }
+        else {
+            choiceDialogBox.choices = null;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 }
