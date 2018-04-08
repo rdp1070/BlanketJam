@@ -20,7 +20,6 @@ public class InteractableManager : MonoBehaviour {
                 return true;
             }
         }
-
         return false;
     }
 }

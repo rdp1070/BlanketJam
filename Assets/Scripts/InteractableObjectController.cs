@@ -13,8 +13,8 @@ public class InteractableObjectController : MonoBehaviour {
     public string display_action_text;
     public Text Interaction_Message;
     public string minigame_scene_name;
-    
-    
+
+    public ChoiceController[] choices;
 
     // this should have a list of "dialouge options"
     // this should also have "intro dialouge"
@@ -22,6 +22,7 @@ public class InteractableObjectController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        choices = GetComponentsInChildren<ChoiceController>();
         display_Interaction = false;
         interacting = false;
         var height = (this.transform.localScale.y / GetComponent<SpriteRenderer>().sprite.bounds.size.y);
