@@ -11,15 +11,4 @@ public class InteractableManager : MonoBehaviour {
     { 
         collection = FindObjectsOfType<InteractableObjectController>();
     }
-
-    public bool CheckForInteracting()
-    {
-        foreach (var x in collection) {
-            if (x.interacting == true)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
 }

@@ -2,23 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
+
 public class InteractableObjectController : MonoBehaviour {
 
-    public bool display_Interaction;
-    public bool interacting;
-    Vector3 vector_offset;
-    public string display_name;
-    public string display_action_text;
-
-    public ChoiceController[] choices;
+    public Flowchart flowchart;
 
     // this should have a list of "dialouge options"
 
 	// Use this for initialization
 	void Start () {
-        choices = GetComponentsInChildren<ChoiceController>();
-        display_Interaction = false;
-        interacting = false;
+        
 	}
     
     // Update is called once per frame
@@ -27,13 +21,18 @@ public class InteractableObjectController : MonoBehaviour {
 	}
 
     public void Display_Interaction_text(bool visible = true) {
-        display_Interaction = visible;
-        gameObject.SetActive(visible);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Trigger Fired");
+        flowchart.SetBooleanVariable("CollidingWithInteractable", true);
+    }
+
+    private void OnTriggerExit2D()
+    {
+        flowchart.SetBooleanVariable("CollidingWithInteractable", false);
     }
 
 }
