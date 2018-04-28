@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - DialogBox
+  - Ball
+  - Ground
+  - Enemy
+  - Laser
+  - Interactable
   layers:
   - Default
   - TransparentFX

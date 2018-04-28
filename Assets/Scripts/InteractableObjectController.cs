@@ -30,4 +30,10 @@ public class InteractableObjectController : MonoBehaviour {
         display_Interaction = visible;
         gameObject.SetActive(visible);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Trigger Fired");
+    }
+
 }
