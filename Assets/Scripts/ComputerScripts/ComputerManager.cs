@@ -44,6 +44,7 @@ public class ComputerManager : MonoBehaviour
     public Button sendButton;
     public bool canExitEmail = true;
     public int numEmails;
+    public int charPerStroke;
 
     int replyIndex;
 
@@ -71,15 +72,19 @@ public class ComputerManager : MonoBehaviour
                 {
                     if (Input.anyKeyDown)
                     {
-                        if (replyIndex < emailObjects[activeEmailIndex].replyText.Length)
+                        for (int i = 0; i < charPerStroke; i++)
                         {
-                            replyTextField.text += emailObjects[activeEmailIndex].replyText[replyIndex];
-                            replyIndex++;
-                        }
-                        else
-                        {
-                            //end message, enable reply button.
-                            sendButton.interactable = true;
+                            if (replyIndex < emailObjects[activeEmailIndex].replyText.Length)
+                            {
+                                replyTextField.text += emailObjects[activeEmailIndex].replyText[replyIndex];
+                                replyIndex++;
+                            }
+                            else
+                            {
+                                //end message, enable reply button.
+                                sendButton.interactable = true;
+                                break;
+                            }
                         }
                     }
                 }
@@ -105,7 +110,7 @@ public class ComputerManager : MonoBehaviour
                         {
 
                             int rand = Random.Range(0, emails.Count);
-                            if (!activeEmails.ContainsKey(emails[rand].message))
+                            if (!activeEmails.ContainsKey(emails[rand].subject))
                             {
 
                                 EmailObject e = new EmailObject();

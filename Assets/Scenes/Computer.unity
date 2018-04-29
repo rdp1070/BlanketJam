@@ -326,6 +326,7 @@ MonoBehaviour:
   sendButton: {fileID: 1693184968}
   canExitEmail: 1
   numEmails: 5
+  charPerStroke: 2
   emailActive: 1
   gameActive: 0
   browserActive: 0
@@ -1211,7 +1212,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1.5, y: 149.7}
-  m_SizeDelta: {x: 300, y: 110}
+  m_SizeDelta: {x: 300, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &814852551
 CanvasRenderer:
