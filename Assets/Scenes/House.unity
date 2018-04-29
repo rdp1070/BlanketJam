@@ -696,7 +696,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &397584456
 GameObject:
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 496886870}
   - component: {fileID: 496886869}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Blanket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1150,7 +1150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &535514018 stripped
 Transform:
@@ -1453,7 +1453,7 @@ Transform:
   - {fileID: 210574379}
   - {fileID: 1062695304}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &738488617
 Prefab:
@@ -1908,7 +1908,7 @@ Transform:
   - {fileID: 422262189}
   - {fileID: 535514018}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1248191111
 GameObject:
@@ -2004,7 +2004,7 @@ GameObject:
   - component: {fileID: 1438302085}
   - component: {fileID: 1438302084}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2425,6 +2425,7 @@ GameObject:
   - component: {fileID: 1550836959}
   - component: {fileID: 1550836958}
   - component: {fileID: 1550836957}
+  - component: {fileID: 1550836972}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Player
@@ -2445,7 +2446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 140.6228, y: -73.41754}
+  scrollPos: {x: -3.6120846, y: -181.13727}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2457,8 +2458,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1550836971}
-  selectedCommands: []
+  - {fileID: 1550836967}
+  selectedCommands:
+  - {fileID: 1550836972}
   variables:
   - {fileID: 1550836933}
   - {fileID: 1550836943}
@@ -2529,7 +2531,7 @@ Transform:
   m_Children:
   - {fileID: 1731090715}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1550836931
 MonoBehaviour:
@@ -3335,6 +3337,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1550836966}
+  - {fileID: 1550836972}
   - {fileID: 1550836965}
   - {fileID: 1550836964}
 --- !u!114 &1550836968
@@ -3426,6 +3429,32 @@ MonoBehaviour:
   - {fileID: 1550836970}
   - {fileID: 1550836969}
   - {fileID: 1550836968}
+--- !u!114 &1550836972
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 66
+  indentLevel: 0
+  storyText: Oh.... hey.
+  description: 
+  character: {fileID: 496886869}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1552373491 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437,
@@ -4060,7 +4089,7 @@ Transform:
   - {fileID: 1602851394}
   - {fileID: 774885497}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820220861
 GameObject:
@@ -4101,7 +4130,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838916538
 GameObject:
