@@ -7,7 +7,8 @@ using Fungus;
 public class InteractableObjectController : MonoBehaviour {
 
     public Flowchart flowchart;
-
+    public string FungusMessage;
+    public SpriteRenderer render;
     // this should have a list of "dialouge options"
 
 	// Use this for initialization
@@ -27,12 +28,17 @@ public class InteractableObjectController : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Trigger Fired");
+
+        render.enabled = true;
         flowchart.SetBooleanVariable("CollidingWithInteractable", true);
+        flowchart.SetStringVariable("InteractMessage", FungusMessage);
     }
 
-    private void OnTriggerExit2D()
+    private void OnTriggerExit2D(Collider2D collision)
     {
+        render.enabled = false;
         flowchart.SetBooleanVariable("CollidingWithInteractable", false);
+        flowchart.SetStringVariable("InteractMessage", "");
     }
 
 }

@@ -265,6 +265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1970251778}
+  - {fileID: 1973079830}
   m_Father: {fileID: 1219783089}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -695,7 +696,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &397584456
 GameObject:
@@ -1103,6 +1104,54 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &496886868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 496886870}
+  - component: {fileID: 496886869}
+  m_Layer: 0
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &496886869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496886868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Blanket
+  nameColor: {r: 0.3803922, g: 0.52156866, b: 0.76470596, a: 1}
+  soundEffect: {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &496886870
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496886868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &535514018 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: d024aaa09f4080d448d16f62d1a97b0b, type: 2}
@@ -1404,7 +1453,7 @@ Transform:
   - {fileID: 210574379}
   - {fileID: 1062695304}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &738488617
 Prefab:
@@ -1506,6 +1555,15 @@ Prefab:
     - target: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 212360758580058706, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+      propertyPath: m_Name
+      value: Fridge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
@@ -1850,7 +1908,7 @@ Transform:
   - {fileID: 422262189}
   - {fileID: 535514018}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1248191111
 GameObject:
@@ -2350,6 +2408,23 @@ GameObject:
   - component: {fileID: 1550836950}
   - component: {fileID: 1550836945}
   - component: {fileID: 1550836954}
+  - component: {fileID: 1550836956}
+  - component: {fileID: 1550836955}
+  - component: {fileID: 1550836971}
+  - component: {fileID: 1550836970}
+  - component: {fileID: 1550836969}
+  - component: {fileID: 1550836968}
+  - component: {fileID: 1550836967}
+  - component: {fileID: 1550836966}
+  - component: {fileID: 1550836965}
+  - component: {fileID: 1550836964}
+  - component: {fileID: 1550836963}
+  - component: {fileID: 1550836962}
+  - component: {fileID: 1550836961}
+  - component: {fileID: 1550836960}
+  - component: {fileID: 1550836959}
+  - component: {fileID: 1550836958}
+  - component: {fileID: 1550836957}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Player
@@ -2370,11 +2445,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -20.578176, y: -4.754575}
+  scrollPos: {x: 140.6228, y: -73.41754}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.84999967
+  zoom: 0.54771775
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2382,9 +2457,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1550836939}
-  selectedCommands:
-  - {fileID: 1550836949}
+  - {fileID: 1550836971}
+  selectedCommands: []
   variables:
   - {fileID: 1550836933}
   - {fileID: 1550836943}
@@ -2455,7 +2529,7 @@ Transform:
   m_Children:
   - {fileID: 1731090715}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1550836931
 MonoBehaviour:
@@ -2548,7 +2622,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.19247
     y: 137.18137
-    width: 160.58829
+    width: 152.24243
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2644,7 +2718,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 426.75476
     y: 335.9311
-    width: 122.94121
+    width: 121.20456
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2654,6 +2728,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1550836938}
+  - {fileID: 1550836955}
   - {fileID: 1550836949}
 --- !u!114 &1550836940
 MonoBehaviour:
@@ -2754,7 +2829,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 37.048782
     y: 280.0488
-    width: 160.58829
+    width: 157.71971
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2804,7 +2879,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.89456
     y: 267.31076
-    width: 137.05887
+    width: 135.81062
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2814,6 +2889,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1550836942}
+  - {fileID: 1550836956}
   - {fileID: 1550836948}
 --- !u!114 &1550836947
 MonoBehaviour:
@@ -2973,6 +3049,383 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &1550836955
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1550836956
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1550836957
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1550836960}
+  message: Couch
+--- !u!114 &1550836958
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 61
+  indentLevel: 0
+  text: Relax on Couch
+  description: 
+  targetBlock: {fileID: 1550836963}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550836959
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 0
+  storyText: Hey, it's blanket on the couch.
+  description: 
+  character: {fileID: 1438302084}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1550836960
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 29.339342
+    y: 498.31198
+    width: 155.89395
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 65
+  blockName: InteractWithCouch
+  description: 
+  eventHandler: {fileID: 1550836957}
+  commandList:
+  - {fileID: 1550836959}
+  - {fileID: 1550836958}
+--- !u!114 &1550836961
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 0
+  text: Just Veg Out
+  description: 
+  targetBlock: {fileID: 1550836971}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550836962
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  text: Chat with Blanket
+  description: 
+  targetBlock: {fileID: 1550836967}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550836963
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 214.04552
+    y: 497.13565
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 64
+  blockName: UseCouch
+  description: Choose what you do on the couch.
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1550836962}
+  - {fileID: 1550836961}
+--- !u!114 &1550836964
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 55
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Scenes/RefrigeratorScene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1550836965
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 54
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1550836966
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 53
+  indentLevel: 0
+  storyText: 'Hey Blanket! '
+  description: 
+  character: {fileID: 1438302084}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1550836967
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 406.18515
+    y: 485.57404
+    width: 144.9394
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 63
+  blockName: TalkWithBlanket
+  description: Decide to eat healthy food
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1550836966}
+  - {fileID: 1550836965}
+  - {fileID: 1550836964}
+--- !u!114 &1550836968
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Scenes/RefrigeratorScene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1550836969
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1550836970
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  storyText: Mind if I sit here and zone out?
+  description: 
+  character: {fileID: 1438302084}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1550836971
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 419.04538
+    y: 554.19385
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 62
+  blockName: VegOut
+  description: Decide to eat leftovers, to treat yourself
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1550836970}
+  - {fileID: 1550836969}
+  - {fileID: 1550836968}
 --- !u!1 &1552373491 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437,
@@ -2990,6 +3443,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowchart: {fileID: 1550836927}
+  FungusMessage: Fridge
+  render: {fileID: 1552373493}
+--- !u!212 &1552373493 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212360758580058706, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 738488617}
 --- !u!224 &1602851394 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224317356831457152, guid: c8b3f7fe81b9a2241b67d720e764d6a6,
@@ -3600,7 +4060,7 @@ Transform:
   - {fileID: 1602851394}
   - {fileID: 774885497}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820220861
 GameObject:
@@ -3641,7 +4101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838916538
 GameObject:
@@ -3724,6 +4184,158 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
     type: 2}
   m_PrefabInternal: {fileID: 738488617}
+--- !u!1001 &1973079829
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 81457013}
+    m_Modifications:
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+      propertyPath: m_Name
+      value: Couch
+      objectReference: {fileID: 0}
+    - target: {fileID: 61772335424458732, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -2.2374587
+      objectReference: {fileID: 0}
+    - target: {fileID: 61772335424458732, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.2778444
+      objectReference: {fileID: 0}
+    - target: {fileID: 212360758580058706, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1973079830 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 1973079829}
+--- !u!1 &1973079831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 1973079829}
+--- !u!114 &1973079832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973079831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f9549461bd0d5478faf65af081264d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 1550836927}
+  FungusMessage: Couch
+  render: {fileID: 1973079833}
+--- !u!212 &1973079833 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212360758580058706, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 1973079829}
 --- !u!1 &1994652390
 GameObject:
   m_ObjectHideFlags: 0
