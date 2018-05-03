@@ -267,6 +267,7 @@ Transform:
   - {fileID: 1970251778}
   - {fileID: 1600946888}
   - {fileID: 1973079830}
+  - {fileID: 1389675771}
   m_Father: {fileID: 1219783089}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1653,7 +1654,8 @@ Prefab:
       propertyPath: m_Name
       value: Fridge
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114164920773864214, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &751409088
@@ -2424,6 +2426,170 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: b241b59d6a89aff4fbf0bce77e644761, type: 2}
   m_PrefabInternal: {fileID: 417494320}
+--- !u!1001 &1389675770
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 81457013}
+    m_Modifications:
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 52.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61772335424458732, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -2.2882843
+      objectReference: {fileID: 0}
+    - target: {fileID: 61772335424458732, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.3794956
+      objectReference: {fileID: 0}
+    - target: {fileID: 61772335424458732, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.22955799
+      objectReference: {fileID: 0}
+    - target: {fileID: 61772335424458732, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 3.4861336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+      propertyPath: m_Name
+      value: Sink
+      objectReference: {fileID: 0}
+    - target: {fileID: 212360758580058706, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114164920773864214, guid: 722bf4cc0bf6d754cb059147ef664437,
+        type: 2}
+      propertyPath: flowchart
+      value: 
+      objectReference: {fileID: 1550836927}
+    m_RemovedComponents:
+    - {fileID: 114164920773864214, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1389675771 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224326830881611604, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389675770}
+--- !u!1 &1389675772 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389675770}
+--- !u!212 &1389675773 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212360758580058706, guid: 722bf4cc0bf6d754cb059147ef664437,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389675770}
+--- !u!114 &1389675774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389675772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f9549461bd0d5478faf65af081264d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 1550836927}
+  FungusMessage: Sink
+  render: {fileID: 1389675773}
 --- !u!1001 &1393786546
 Prefab:
   m_ObjectHideFlags: 0
@@ -2810,12 +2976,10 @@ GameObject:
   - component: {fileID: 1550836937}
   - component: {fileID: 1550836936}
   - component: {fileID: 1550836946}
-  - component: {fileID: 1550836942}
   - component: {fileID: 1550836941}
   - component: {fileID: 1550836947}
   - component: {fileID: 1550836948}
   - component: {fileID: 1550836939}
-  - component: {fileID: 1550836938}
   - component: {fileID: 1550836949}
   - component: {fileID: 1550836944}
   - component: {fileID: 1550836951}
@@ -2864,6 +3028,27 @@ GameObject:
   - component: {fileID: 1550836995}
   - component: {fileID: 1550836984}
   - component: {fileID: 1550836985}
+  - component: {fileID: 1550836987}
+  - component: {fileID: 1550836942}
+  - component: {fileID: 1550836938}
+  - component: {fileID: 1550837011}
+  - component: {fileID: 1550837010}
+  - component: {fileID: 1550837009}
+  - component: {fileID: 1550837008}
+  - component: {fileID: 1550836992}
+  - component: {fileID: 1550836988}
+  - component: {fileID: 1550836994}
+  - component: {fileID: 1550836993}
+  - component: {fileID: 1550837007}
+  - component: {fileID: 1550837006}
+  - component: {fileID: 1550837005}
+  - component: {fileID: 1550837004}
+  - component: {fileID: 1550837003}
+  - component: {fileID: 1550837002}
+  - component: {fileID: 1550837001}
+  - component: {fileID: 1550837000}
+  - component: {fileID: 1550836999}
+  - component: {fileID: 1550836998}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Player
@@ -2884,11 +3069,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -37.771786, y: -403.7577}
+  scrollPos: {x: 296.98874, y: -156.0665}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.84999967
+  zoom: 0.45999998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2896,9 +3081,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1550836989}
-  selectedCommands:
-  - {fileID: 1550836985}
+  - {fileID: 1550836939}
+  selectedCommands: []
   variables:
   - {fileID: 1550836933}
   - {fileID: 1550836943}
@@ -3047,6 +3231,7 @@ MonoBehaviour:
   description: Choose which kind of food you want.
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1550836987}
   - {fileID: 1550836950}
   - {fileID: 1550836945}
 --- !u!114 &1550836935
@@ -3064,7 +3249,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26.897354
     y: 166.68954
-    width: 160.58829
+    width: 145.65218
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3128,24 +3313,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550836926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 30
+  itemId: 103
   indentLevel: 0
-  storyText: Yeah, I think we earned this.
-  description: 
-  character: {fileID: 1438302084}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Player: We can eat the leftovers, it\u2019s okay to treat yourself
+      to something every once and awhile.\r\nBlanket: I love when we order takeout.
+      It\u2019s so much easier than cooking. I get stressed out when the sink is full
+      of pans\u2026\r\n"
 --- !u!114 &1550836939
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3161,7 +3339,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 426.75476
     y: 335.9311
-    width: 122.94121
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3225,24 +3403,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550836926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 25
+  itemId: 102
   indentLevel: 0
-  storyText: Yeah it's Probably best if I eat some of this food.
-  description: 
-  character: {fileID: 1438302084}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Player: Fruit can help you have more  energy to get through the day!\r\nBlanket:
+      I\u2019m not hungry\u2026\r\nPlayer: I know it\u2019s a tiring but please eat
+      something. \r\n"
 --- !u!114 &1550836943
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3272,7 +3442,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 37.048782
     y: 280.0488
-    width: 160.58829
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3296,7 +3466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  text: Treat Yourself
+  text: Eat takeout leftovers
   description: 
   targetBlock: {fileID: 1550836939}
   hideIfVisited: 0
@@ -3322,7 +3492,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.89456
     y: 267.31076
-    width: 137.05887
+    width: 128.26086
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3400,7 +3570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  text: Eat Healthy?
+  text: Eat something healthy
   description: 
   targetBlock: {fileID: 1550836946}
   hideIfVisited: 0
@@ -3606,7 +3776,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 29.339342
     y: 498.31198
-    width: 161.76474
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3630,7 +3800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  text: Just Veg Out
+  text: Veg Out
   description: 
   targetBlock: {fileID: 1550836971}
   hideIfVisited: 0
@@ -3654,7 +3824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 57
   indentLevel: 0
-  text: Chat with Blanket
+  text: Talk
   description: 
   targetBlock: {fileID: 1550836967}
   hideIfVisited: 0
@@ -3706,7 +3876,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Scenes/RefrigeratorScene
+    stringVal: Scenes/Couch
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1550836965
@@ -3768,7 +3938,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 406.18515
     y: 485.57404
-    width: 146.47063
+    width: 134.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3796,7 +3966,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Scenes/RefrigeratorScene
+    stringVal: Scenes/Couch
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1550836969
@@ -3941,7 +4111,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.7657
     y: 714.43353
-    width: 131.17651
+    width: 123.91305
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4079,7 +4249,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1.059494
     y: 708.6098
-    width: 181.76476
+    width: 169.56522
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4130,7 +4300,7 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &1550836984
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
@@ -4149,7 +4319,7 @@ MonoBehaviour:
       for helping\u2026\r\n"
 --- !u!114 &1550836985
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
@@ -4179,18 +4349,51 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.9054
     y: 695.8719
-    width: 124.117676
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 91
   blockName: Check Email
-  description: Decide to eat healthy food
+  description: Respond to those emails!
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1550836984}
   - {fileID: 1550836983}
   - {fileID: 1550836982}
+--- !u!114 &1550836987
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 101
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Player: I\u2019m really hungry, what would you like to eat?\r\nBlanket:
+      ...\n"
+--- !u!114 &1550836988
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Player: Reorganizing the sink... classic me. (placeholder)\r\n"
 --- !u!114 &1550836989
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4206,13 +4409,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 367.31693
     y: 778.2249
-    width: 125.29414
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 94
   blockName: Ignore Email
-  description: Decide to eat healthy food
+  description: Ignore the shit out of those emails.
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1550836985}
@@ -4254,9 +4457,72 @@ MonoBehaviour:
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
+--- !u!114 &1550836992
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 379.72366
+    y: 934.0535
+    width: 178.26088
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 122
+  blockName: Reorganize Sink Cabinet
+  description: Clean the sink, but put stuff away.
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1550836988}
+  - {fileID: 1550836994}
+  - {fileID: 1550836993}
+--- !u!114 &1550836993
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 111
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Scenes/Computer
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1550836994
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 110
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!114 &1550836995
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
@@ -4275,7 +4541,7 @@ MonoBehaviour:
       I don\u2019t have the energy to respond right now...\r\n"
 --- !u!114 &1550836996
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
@@ -4299,7 +4565,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &1550836997
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
@@ -4321,6 +4587,315 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &1550836998
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1550837003}
+  message: Sink
+--- !u!114 &1550836999
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 0
+  text: Practice Speaking
+  description: 
+  targetBlock: {fileID: 1550837007}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550837000
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  text: Brush Teeth
+  description: 
+  targetBlock: {fileID: 1550837007}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550837001
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  text: Clean Sink
+  description: 
+  targetBlock: {fileID: 1550837007}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550837002
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 0
+  storyText: It's the Sink and Mirror.
+  description: 
+  character: {fileID: 1438302084}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1550837003
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -31.667784
+    y: 937.70056
+    width: 139.13043
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 124
+  blockName: InteractWithSink
+  description: 
+  eventHandler: {fileID: 1550836998}
+  commandList:
+  - {fileID: 1550837002}
+  - {fileID: 1550837001}
+  - {fileID: 1550837000}
+  - {fileID: 1550836999}
+--- !u!114 &1550837004
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 115
+  indentLevel: 0
+  text: Throw out Bottles in sink
+  description: 
+  targetBlock: {fileID: 1550837011}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550837005
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 114
+  indentLevel: 0
+  text: Reorganize Cabinet
+  description: 
+  targetBlock: {fileID: 1550836992}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1550837006
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 113
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Player: Hey This is sink placeholder text!'
+--- !u!114 &1550837007
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 168.1294
+    y: 936.2516
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 123
+  blockName: UseSink
+  description: Choose what you do on the sink/mirror.
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1550837006}
+  - {fileID: 1550837005}
+  - {fileID: 1550837004}
+--- !u!114 &1550837008
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 107
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Scenes/Computer
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1550837009
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1550837010
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 105
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Player: '
+--- !u!114 &1550837011
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 369.1352
+    y: 1016.40643
+    width: 173.91306
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 121
+  blockName: Throw out stuff in Sink
+  description: 'Clean with extreme prejudice. '
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1550837010}
+  - {fileID: 1550837009}
+  - {fileID: 1550837008}
 --- !u!1 &1552373491 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437,
@@ -4471,7 +5046,8 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114164920773864214, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &1600946888 stripped
@@ -5263,7 +5839,8 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114164920773864214, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 722bf4cc0bf6d754cb059147ef664437, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &1973079830 stripped

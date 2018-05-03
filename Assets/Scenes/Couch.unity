@@ -476,13 +476,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogOptionsPositive:
-  - This is my first sentence
-  - This is my Second Sentence
-  - 3rd Sentence
+  - Today, I thought about how cool it would be to be a robot.
+  - "If I could be any kind of animal, I think I\u2019d be a giraffe\u2026. "
+  - I started watching a new series on Netfilm and oh my god.
+  - Is this what happiness is supposed to feel like?
+  - "I\u2019d like to travel the world someday."
   DialogOptionsNegative:
-  - 1st Negative
-  - 2nd Negative
-  - 3rd Negative
+  - Well today, work was rough...things are making me so uncomfortable lately.
+  - "Jasmin\u2019s birthday was recently and I want to say hi but it\u2019s been a
+    few months since we last talked."
+  - I wonder why God even chose to create us sometimes? Was that a good choice?
+  - My mom said she was worried about me recently.
+  - "I\u2019m trying to do my best at work but I\u2019m definitely struggling."
+  - "I feel like I\u2019m sort of stuck sometimes."
+  - Do we have a reason to even exist? I wonder sometimes.
   sprites:
   - {fileID: 21300000, guid: 62955e2782fd34c5ca3e78712625ae50, type: 3}
   activeDialogOptionPositive: 
@@ -769,6 +776,9 @@ GameObject:
   - component: {fileID: 713991968}
   - component: {fileID: 713991967}
   - component: {fileID: 713991966}
+  - component: {fileID: 713991971}
+  - component: {fileID: 713991970}
+  - component: {fileID: 713991969}
   m_Layer: 0
   m_Name: Flowchart_GameManager
   m_TagString: Untagged
@@ -892,9 +902,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 713991957}
-  selectedCommands:
-  - {fileID: 713991962}
+  - {fileID: 713991971}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1107,6 +1116,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 713991961}
   message: DisplayOptionBubbles
+--- !u!114 &713991969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 713991952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Scenes/House
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &713991970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 713991952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &713991971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 713991952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 153
+    y: 394
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 12
+  blockName: End Block
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 713991970}
+  - {fileID: 713991969}
 --- !u!1 &975853983
 GameObject:
   m_ObjectHideFlags: 0
