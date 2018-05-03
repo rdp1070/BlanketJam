@@ -801,7 +801,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &713991954
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -819,7 +819,7 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &713991955
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -902,8 +902,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 713991971}
-  selectedCommands: []
+  - {fileID: 713991957}
+  selectedCommands:
+  - {fileID: 713991954}
   variables: []
   description: 
   stepPause: 0
@@ -917,7 +918,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &713991959
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -936,7 +937,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &713991960
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -955,7 +956,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &713991961
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -982,7 +983,7 @@ MonoBehaviour:
   - {fileID: 713991966}
 --- !u!114 &713991962
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1009,7 +1010,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &713991963
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1028,7 +1029,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &713991964
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1047,7 +1048,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &713991965
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1073,7 +1074,7 @@ MonoBehaviour:
   - {fileID: 713991963}
 --- !u!114 &713991966
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1092,7 +1093,7 @@ MonoBehaviour:
   _textObjectObsolete: {fileID: 0}
 --- !u!114 &713991967
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1105,7 +1106,7 @@ MonoBehaviour:
   message: HideOptionBubbles
 --- !u!114 &713991968
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1118,7 +1119,7 @@ MonoBehaviour:
   message: DisplayOptionBubbles
 --- !u!114 &713991969
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1136,7 +1137,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &713991970
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -1154,7 +1155,7 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &713991971
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
