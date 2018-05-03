@@ -20,3 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: 1e4c19db9082a76499628ce00fdeb268
+  - enabled: 1
+    path: Assets/Scenes/Computer.unity
+    guid: f463745183b706f45910d7680aebf969
+  - enabled: 1
+    path: Assets/Scenes/Couch.unity
+    guid: c2db0e002ed1d634b8fe3777d8ccc9f0
+  - enabled: 1
+    path: Assets/Scenes/Sink.unity
+    guid: 9d64b225fd81f174b93953056cd35ce9
