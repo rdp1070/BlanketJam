@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61772335424458732}
   - component: {fileID: 222390443890718826}
   - component: {fileID: 212360758580058706}
+  - component: {fileID: 114164920773864214}
   m_Layer: 10
   m_Name: InteractableObject
   m_TagString: Interactable
@@ -75,6 +76,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.092039, y: 4.8087378}
   m_EdgeRadius: 0
+--- !u!114 &114164920773864214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907225812962040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f9549461bd0d5478faf65af081264d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 0}
+  FungusMessage: 
+  render: {fileID: 0}
 --- !u!212 &212360758580058706
 SpriteRenderer:
   m_ObjectHideFlags: 1

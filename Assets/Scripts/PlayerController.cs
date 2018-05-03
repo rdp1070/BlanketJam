@@ -17,12 +17,12 @@ public class PlayerController : MonoBehaviour
     public SkeletonAnimation skeletonAnimation;
     private string currentAnimationName;
 
-    private void Interact(InteractableObjectController interactableObject)
+    public void Interact()
     {
-        Debug.Log("You're doing it fam, you're interacting.");
+        Debug.Log("You're doing it fam, you're interacting. ");
     }
 
-    private void EndInteract(InteractableObjectController interactableObject)
+    public void EndInteract()
     {
 
         Debug.Log("You have done what you came to do.");
