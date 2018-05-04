@@ -9,15 +9,17 @@ public class EmailObject{
     public string message;
     public string replyText;
     public bool replied = false;
+    public Sprite avatar;
     int index;
 
     private ComputerManager owner;
 
-    public void Init(string sub, string mes, string rep, int i, ComputerManager o)
+    public void Init(string sub, string mes, string rep, int i, Sprite a, ComputerManager o)
     {
         subject = sub;
         message = mes;
         replyText = rep;
+        avatar = a;
         index = i;
         owner = o;
     }

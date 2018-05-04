@@ -20,6 +20,7 @@ public class ComputerManager : MonoBehaviour
         public string subject;
         public string message;
         public string reply;
+        public Sprite avatar;
     }
 
     public ComputerState activeState;
@@ -36,6 +37,7 @@ public class ComputerManager : MonoBehaviour
     public GameObject errorMessageDisplay;
 
     public GameObject EmailDisplay;
+    public Image senderAvatar;
     public Vector2 emailObjectOffset;
     public Vector2 emailSpaceBuffer;
     public Text messageTextField;
@@ -59,7 +61,7 @@ public class ComputerManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -114,7 +116,7 @@ public class ComputerManager : MonoBehaviour
                             {
 
                                 EmailObject e = new EmailObject();
-                                e.Init(emails[rand].subject, emails[rand].message, emails[rand].reply, i, this);
+                                e.Init(emails[rand].subject, emails[rand].message, emails[rand].reply, i, emails[i].avatar, this);
                                 emailObjects.Add(e);
                                 emailSubjects[i].text = emails[rand].subject;
                                 emailButtons[i].gameObject.SetActive(true);
@@ -207,7 +209,7 @@ public class ComputerManager : MonoBehaviour
         {
             activeEmailIndex = i;
             messageTextField.text = emailObjects[activeEmailIndex].message;
-
+            senderAvatar.sprite = emailObjects[activeEmailIndex].avatar;
             replyButton.interactable = !emailObjects[activeEmailIndex].replied;
             replyButton.gameObject.SetActive(!emailObjects[activeEmailIndex].replied);
             replyTextField.text = "";
