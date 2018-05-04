@@ -7,18 +7,24 @@ public class HealthyFoodGameManager : MonoBehaviour {
 
     public Food[] foods;
     List<Food> healthyFoods;
-    public TextBoxManager TextBoxManager;
+    List<Food> takeoutFoods;
+    public bool HealthyGoal = true;
+    public Fungus.Flowchart flowchart;
     
 	// Use this for initialization
 	void Start () {
 
-
-
         foods = GetComponentsInChildren<Food>();
         healthyFoods = new List<Food>();
+        takeoutFoods = new List<Food>();
+
         foreach (Food food in foods) {
-            if (food.healthy) {
+            if (food.healthy)
+            {
                 healthyFoods.Add(food);
+            }
+            else {
+                takeoutFoods.Add(food);
             }
         }
 	}
@@ -28,19 +34,22 @@ public class HealthyFoodGameManager : MonoBehaviour {
         var remains = false;
 
         foreach (Food food in healthyFoods) {
-            if (!food.isEaten) {
+            if (!food.isEaten && HealthyGoal == true) {
+                remains = true;
+            }
+        }
+        foreach (Food food in takeoutFoods)
+        {
+            if (!food.isEaten && HealthyGoal == false)
+            {
                 remains = true;
             }
         }
 
         if (remains == false) {
             Debug.Log("You ate em!");
-            SceneSegue();
+            flowchart.ExecuteIfHasBlock("Scene End");
         }
 
 	}
-
-    private void SceneSegue() {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("FinalScene", LoadSceneMode.Single);
-    }
 }
