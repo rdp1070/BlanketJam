@@ -10,11 +10,12 @@ public class EmailObject{
     public string replyText;
     public bool replied = false;
     public Sprite avatar;
+    public string sender;
     int index;
 
     private ComputerManager owner;
 
-    public void Init(string sub, string mes, string rep, int i, Sprite a, ComputerManager o)
+    public void Init(string sub, string mes, string rep, string s, int i, Sprite a, ComputerManager o)
     {
         subject = sub;
         message = mes;
@@ -22,5 +23,6 @@ public class EmailObject{
         avatar = a;
         index = i;
         owner = o;
+        sender = s;
     }
 }

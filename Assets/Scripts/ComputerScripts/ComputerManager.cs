@@ -21,6 +21,7 @@ public class ComputerManager : MonoBehaviour
         public string message;
         public string reply;
         public Sprite avatar;
+        public string sender;
     }
 
     public ComputerState activeState;
@@ -30,6 +31,8 @@ public class ComputerManager : MonoBehaviour
     public List<EmailObject> emailObjects = new List<EmailObject>();
     public List<Button> emailButtons = new List<Button>();
     public List<Text> emailSubjects = new List<Text>();
+    public bool positiveAction;
+    public Fungus.Flowchart flowChart;
     int activeEmailIndex;
 
     bool emailReplyActive = false;
@@ -38,6 +41,8 @@ public class ComputerManager : MonoBehaviour
 
     public GameObject EmailDisplay;
     public Image senderAvatar;
+    public Text senderText;
+    public Text subjectText;
     public Vector2 emailObjectOffset;
     public Vector2 emailSpaceBuffer;
     public Text messageTextField;
@@ -103,7 +108,7 @@ public class ComputerManager : MonoBehaviour
                 {
                     activeState = ComputerState.EMAIL;
                     EmailDisplay.SetActive(true);
-                    canExitEmail = true;
+                    canExitEmail = !positiveAction;
                     emailObjects.Clear();
                     activeEmails.Clear();
                     for (int i = 0; i < numEmails; i++)
@@ -116,9 +121,9 @@ public class ComputerManager : MonoBehaviour
                             {
 
                                 EmailObject e = new EmailObject();
-                                e.Init(emails[rand].subject, emails[rand].message, emails[rand].reply, i, emails[i].avatar, this);
+                                e.Init(emails[rand].subject, emails[rand].message, emails[rand].reply, emails[rand].sender, i, emails[rand].avatar, this);
                                 emailObjects.Add(e);
-                                emailSubjects[i].text = emails[rand].subject;
+                                emailSubjects[i].text = emails[rand].sender +": " + emails[rand].subject;
                                 emailButtons[i].gameObject.SetActive(true);
                                 activeEmails.Add(emails[rand].subject, emails[rand]);
                                 break;
@@ -144,6 +149,7 @@ public class ComputerManager : MonoBehaviour
                     {
                         activeState = ComputerState.DESKTOP;
                         EmailDisplay.SetActive(false);
+                        ExitGame();
                     }
                     else
                     {
@@ -213,6 +219,8 @@ public class ComputerManager : MonoBehaviour
             replyButton.interactable = !emailObjects[activeEmailIndex].replied;
             replyButton.gameObject.SetActive(!emailObjects[activeEmailIndex].replied);
             replyTextField.text = "";
+            senderText.text = "From: " + emailObjects[activeEmailIndex].sender;
+            subjectText.text = "Subject: " + emailObjects[activeEmailIndex].subject;
         }
     }
 
@@ -242,5 +250,10 @@ public class ComputerManager : MonoBehaviour
             desktopButtons[i].interactable = true;
         }
         
+    }
+
+    public void ExitGame()
+    {
+        flowChart.ExecuteIfHasBlock("EndBlock");
     }
 }
