@@ -217,7 +217,7 @@ public class ComputerManager : MonoBehaviour
             messageTextField.text = emailObjects[activeEmailIndex].message;
             senderAvatar.sprite = emailObjects[activeEmailIndex].avatar;
             replyButton.interactable = !emailObjects[activeEmailIndex].replied;
-            replyButton.gameObject.SetActive(!emailObjects[activeEmailIndex].replied);
+            replyButton.gameObject.SetActive(!emailObjects[activeEmailIndex].replied && positiveAction);
             replyTextField.text = emailObjects[activeEmailIndex].replied ? emailObjects[activeEmailIndex].replyText : "";
             senderText.text = "From: " + emailObjects[activeEmailIndex].sender;
             subjectText.text = "Subject: " + emailObjects[activeEmailIndex].subject;
@@ -255,5 +255,10 @@ public class ComputerManager : MonoBehaviour
     public void ExitGame()
     {
         flowChart.ExecuteIfHasBlock("EndBlock");
+    }
+
+    public void SetPositiveFlag(bool pos)
+    {
+        positiveAction = pos;
     }
 }

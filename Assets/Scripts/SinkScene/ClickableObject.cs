@@ -5,10 +5,11 @@ using UnityEngine;
 public class ClickableObject : MonoBehaviour {
 
     public Rigidbody2D rb;
+    public Collider2D collider;
     public ObjectSlot pairedSlot;
     public float snapSpeed;
     public SinkManager owner;
-    bool link;
+    public bool link;
 
 
 
@@ -22,6 +23,8 @@ public class ClickableObject : MonoBehaviour {
                 transform.position = new Vector3(pairedSlot.transform.position.x, pairedSlot.transform.position.y, transform.position.z);
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 link = false;
+                pairedSlot.occupied = true;
+                transform.localScale = new Vector3(.5f, .5f, 1);
             }
             else
             {
@@ -38,6 +41,9 @@ public class ClickableObject : MonoBehaviour {
             rb.gravityScale = 1;
             link = false;
             rb.constraints = RigidbodyConstraints2D.None;
+            collider.enabled = true;
+            //rb.simulated = true;
+            transform.localScale = new Vector3(1, 1, 1);
             owner.placedObjects--;
 
         }
@@ -51,6 +57,8 @@ public class ClickableObject : MonoBehaviour {
             rb.gravityScale = 0;
             rb.velocity *= 0;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            collider.enabled = false;
+            //rb.simulated = false;
             owner.placedObjects++;
             if(owner.placedObjects == owner.numObjects && owner.positiveAction)
             {

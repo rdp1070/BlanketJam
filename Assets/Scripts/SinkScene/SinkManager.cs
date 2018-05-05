@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class SinkManager : MonoBehaviour {
 
+    public List<GameObject> cabinetSlot = new List<GameObject>();
     public HingeJoint2D cursorJoint;
     public ClickableObject activeObject;
     public int numObjects;
     public int obstructions;
     public int placedObjects;
     public bool positiveAction;
+    public float minHeight;
+    public float maxHeight;
     bool objectHeld;
     Vector3 worldPoint = Vector3.zero;
     public Fungus.Flowchart flowChart;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
 		
 	}
 	
@@ -25,6 +29,7 @@ public class SinkManager : MonoBehaviour {
            
         worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
         worldPoint.z = 0;
+        worldPoint.y = Mathf.Clamp(worldPoint.y, minHeight, maxHeight);
         cursorJoint.gameObject.transform.position = worldPoint;
         
 
@@ -42,13 +47,14 @@ public class SinkManager : MonoBehaviour {
     {
         activeObject = null;
         worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
-        RaycastHit2D[] hits = Physics2D.RaycastAll(worldPoint, Vector2.down, 0.1f);
+        worldPoint.y = Mathf.Clamp(worldPoint.y, minHeight, maxHeight);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(worldPoint, Vector2.down, 0.1f, LayerMask.GetMask("ClickableItem"));
         if(hits.Length > 0)
         {
             
             for(int i = 0; i < hits.Length; i++)
             {
-                ClickableObject test = hits[i].collider.gameObject.GetComponent<ClickableObject>();
+                ClickableObject test = hits[i].collider.gameObject.transform.parent.GetComponent<ClickableObject>();
                 if(test != null)
                 {
                     //Vector3 localPoint = worldCursor - test.gameObject.transform.position;
@@ -111,5 +117,17 @@ public class SinkManager : MonoBehaviour {
     public void EndGame()
     {
         flowChart.ExecuteIfHasBlock("EndBlock");
+    }
+
+    public void SetPositiveFlag(bool pos)
+    {
+        positiveAction = pos;
+        if (!positiveAction)
+        {
+            for (int i = 0; i < cabinetSlot.Count; i++)
+            {
+                cabinetSlot[i].SetActive(false);
+            }
+        }
     }
 }
