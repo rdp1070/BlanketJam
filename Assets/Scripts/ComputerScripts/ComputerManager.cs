@@ -218,7 +218,7 @@ public class ComputerManager : MonoBehaviour
             senderAvatar.sprite = emailObjects[activeEmailIndex].avatar;
             replyButton.interactable = !emailObjects[activeEmailIndex].replied;
             replyButton.gameObject.SetActive(!emailObjects[activeEmailIndex].replied);
-            replyTextField.text = "";
+            replyTextField.text = emailObjects[activeEmailIndex].replied ? emailObjects[activeEmailIndex].replyText : "";
             senderText.text = "From: " + emailObjects[activeEmailIndex].sender;
             subjectText.text = "Subject: " + emailObjects[activeEmailIndex].subject;
         }
