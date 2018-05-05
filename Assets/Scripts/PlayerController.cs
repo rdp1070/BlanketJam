@@ -40,22 +40,35 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        x = Input.GetAxis("Horizontal") * speed;
-        rb = GetComponent<Rigidbody2D>();
+        
+        if (canMove == true)
+        {
 
-        if (x > 0)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-            SetAnimation("Walk_test");
-        }
-        else if (x < 0)
-        {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
-            SetAnimation("Walk_test");
+            x = Input.GetAxis("Horizontal") * speed;
+            rb = GetComponent<Rigidbody2D>();
+            if (x > 0)
+            {
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+                SetAnimation("Walk_test");
+            }
+            else if (x < 0)
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+                SetAnimation("Walk_test");
+            }
+            else
+            {
+                SetAnimation("Idle");
+            }
         }
         else {
+            x = Input.GetAxis("Horizontal") * 0;
             SetAnimation("Idle");
         }
+    }
+
+    public void SetCanMove(bool movable) {
+        canMove = movable;
     }
 
     private void SetAnimation(string name) {
