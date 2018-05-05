@@ -175,6 +175,7 @@ public class ConversationController : MonoBehaviour
         if (inputString.Equals(activeDialogOptionPositive, System.StringComparison.CurrentCultureIgnoreCase))
         {
             Debug.Log("Happy Go Lucky");
+            flowchart.SetStringVariable("inputString", activeDialogOptionPositive);
             positivity++;
             flowchart.ExecuteIfHasBlock("Next Group");
             // call the flowchart say function
@@ -183,6 +184,7 @@ public class ConversationController : MonoBehaviour
         else if (inputString == activeDialogOptionNegative)
         {
             Debug.Log("Debby Downer");
+            flowchart.SetStringVariable("inputString", activeDialogOptionNegative);
             positivity--;
             flowchart.ExecuteIfHasBlock("Next Group");
             // call the flowchart say function
