@@ -111,6 +111,12 @@ public class ComputerManager : MonoBehaviour
                     canExitEmail = !positiveAction;
                     emailObjects.Clear();
                     activeEmails.Clear();
+
+                    for (int i = 0; i < desktopButtons.Count; i++)
+                    {
+                        desktopButtons[i].interactable = false;
+                    }
+
                     for (int i = 0; i < numEmails; i++)
                     {
                         while (true)
@@ -261,5 +267,6 @@ public class ComputerManager : MonoBehaviour
     public void SetPositiveFlag(bool pos)
     {
         positiveAction = pos;
+        canExitEmail = !pos;
     }
 }
