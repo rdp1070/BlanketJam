@@ -28,7 +28,17 @@ public class HealthyFoodGameManager : MonoBehaviour {
             }
         }
 	}
-	
+
+    public void SetHealthyGoal() {
+        HealthyGoal = true;
+    }
+
+    public void SetTakeoutGoal() {
+        HealthyGoal = false;
+    }
+
+
+
 	// Update is called once per frame
 	void Update () {
         var remains = false;
