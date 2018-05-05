@@ -17,17 +17,20 @@ public class ObjectSlot : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        ClickableObject test = other.gameObject.GetComponent<ClickableObject>();
-        if(test != null)
+        if (!occupied)
         {
-            test.pairedSlot = this;
+            ClickableObject test = other.gameObject.GetComponent<ClickableObject>();
+            if (test != null)
+            {
+                test.pairedSlot = this;
+            }
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         ClickableObject test = other.gameObject.GetComponent<ClickableObject>();
-        if (test != null && test.pairedSlot == this)
+        if (test != null && test.pairedSlot == this && !test.link)
         {
             test.pairedSlot = null;
         }
