@@ -158,18 +158,21 @@ public class ConversationController : MonoBehaviour
         return inputString; // if none of those cases (somehow) return what they gave you
     }
 
-    private bool CheckIfDone(string inputString)
-    {
-
-        if (currentNumDialogs == maxDialogs)
+    public void CheckMaxDialogs() {
+        if (currentNumDialogs >= maxDialogs)
         {
             // transition to the end state of the level.
             if (positivity > 0)
                 flowchart.ExecuteIfHasBlock("Positive End Text");
             else
                 flowchart.ExecuteIfHasBlock("Negative End Text");
-            return true;
         }
+    }
+
+    private bool CheckIfDone(string inputString)
+    {
+
+        CheckMaxDialogs();
 
         // if the inputString is exactly equal to the option, print out a success message.
         if (inputString.Equals(activeDialogOptionPositive, System.StringComparison.CurrentCultureIgnoreCase))
@@ -178,6 +181,7 @@ public class ConversationController : MonoBehaviour
             flowchart.SetStringVariable("inputString", activeDialogOptionPositive);
             positivity++;
             flowchart.ExecuteIfHasBlock("Next Group");
+            flowchart.ExecuteIfHasBlock("Positive Reacts");
             // call the flowchart say function
             return true;
         }
@@ -187,6 +191,7 @@ public class ConversationController : MonoBehaviour
             flowchart.SetStringVariable("inputString", activeDialogOptionNegative);
             positivity--;
             flowchart.ExecuteIfHasBlock("Next Group");
+            flowchart.ExecuteIfHasBlock("Negative Reacts");
             // call the flowchart say function
             return true;
         }
