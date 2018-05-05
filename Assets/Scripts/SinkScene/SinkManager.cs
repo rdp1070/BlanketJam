@@ -116,7 +116,7 @@ public class SinkManager : MonoBehaviour {
 
     public void EndGame()
     {
-        flowChart.ExecuteIfHasBlock("EndBlock");
+        flowChart.ExecuteIfHasBlock("Scene End");
     }
 
     public void SetPositiveFlag(bool pos)
