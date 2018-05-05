@@ -255,7 +255,7 @@ public class ComputerManager : MonoBehaviour
 
     public void ExitGame()
     {
-        flowChart.ExecuteIfHasBlock("EndBlock");
+        flowChart.ExecuteIfHasBlock("Scene End");
     }
 
     public void SetPositiveFlag(bool pos)

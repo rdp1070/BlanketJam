@@ -1024,11 +1024,7 @@ GameObject:
   - component: {fileID: 713992011}
   - component: {fileID: 713992015}
   - component: {fileID: 713992022}
-  - component: {fileID: 713991972}
-  - component: {fileID: 713991997}
   - component: {fileID: 713992024}
-  - component: {fileID: 713992031}
-  - component: {fileID: 713992030}
   - component: {fileID: 713992018}
   - component: {fileID: 713992023}
   - component: {fileID: 713991962}
@@ -1042,7 +1038,6 @@ GameObject:
   - component: {fileID: 713992025}
   - component: {fileID: 713992035}
   - component: {fileID: 713991973}
-  - component: {fileID: 713991996}
   - component: {fileID: 713992036}
   - component: {fileID: 713992037}
   - component: {fileID: 713992039}
@@ -1079,6 +1074,8 @@ GameObject:
   - component: {fileID: 713992067}
   - component: {fileID: 713992069}
   - component: {fileID: 713992007}
+  - component: {fileID: 713992030}
+  - component: {fileID: 713991972}
   m_Layer: 0
   m_Name: Flowchart_GameManager
   m_TagString: Untagged
@@ -1194,11 +1191,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -166.52481, y: -129.32443}
+  scrollPos: {x: 484.31894, y: 250.02704}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 400
-  zoom: 0.5799999
+  zoom: 0.42999998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1206,9 +1203,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 713991989}
-  selectedCommands:
-  - {fileID: 713992011}
+  - {fileID: 713991973}
+  selectedCommands: []
   variables:
   - {fileID: 713991975}
   - {fileID: 713991974}
@@ -1299,7 +1295,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 955.23755
     y: 226.8468
-    width: 170.68967
+    width: 173.25583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1328,7 +1324,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Veg Out
   description: 
-  targetBlock: {fileID: 713991972}
+  targetBlock: {fileID: 713991973}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1386,7 +1382,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1238.5151
     y: 294.73065
-    width: 122.4138
+    width: 126.74419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1412,7 +1408,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 980.1719
     y: 336.7478
-    width: 155.17242
+    width: 156.97675
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1487,7 +1483,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 984.8396
     y: 382.21545
-    width: 146.55173
+    width: 145.34885
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1561,30 +1557,21 @@ MonoBehaviour:
   - {fileID: 713991969}
 --- !u!114 &713991972
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 19.678158
-    y: 129.61479
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 62
-  blockName: VegOut
-  description: Decide to eat leftovers, to treat yourself
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 713991997}
-  - {fileID: 713991996}
+  itemId: 152
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
 --- !u!114 &713991973
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1609,6 +1596,7 @@ MonoBehaviour:
   description: Space Out Begins
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 713991972}
   - {fileID: 713992036}
   - {fileID: 713992037}
   - {fileID: 713992039}
@@ -1781,7 +1769,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1192.7052
     y: 371.4633
-    width: 168.96553
+    width: 177.90698
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1820,7 +1808,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1195.015
     y: 415.57697
-    width: 163.79312
+    width: 170.93024
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1940,7 +1928,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 702.81335
     y: 566.27014
-    width: 144.8276
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1990,7 +1978,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Player: Thanks for chatting!'
+    stringVal: "Blanket: Thanks for talking with me!\r\nPlayer: Sorry, I feel like
+      I just rambled the entire time!\r\nBlanket: No, I like hearing about your day,
+      even if it\u2019s a little...it lets me know what\u2019s going on with your
+      life.\r"
 --- !u!114 &713991992
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2006,7 +1997,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 699.59375
     y: 521.0127
-    width: 150.00002
+    width: 156.97675
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2056,7 +2047,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Blanket: You aren''t very good at this...'
+    stringVal: "Blanket: Things are scary huh?\r\nPlayer: Oh sorry, I ended up talking
+      about some stressful things.\r\nBlanket: No, I like hearing about your day,
+      even if it\u2019s a little...it lets me know what\u2019s going on with your
+      life.\r"
 --- !u!114 &713991995
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2072,7 +2066,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 953.36255
     y: 269.03433
-    width: 162.06897
+    width: 161.62791
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2083,52 +2077,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 713991977}
   - {fileID: 713992006}
---- !u!114 &713991996
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 713991952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 114
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 713991973}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &713991997
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 713991952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 87
-  indentLevel: 0
-  storyText: Mind if I sit here and zone out?
-  description: 
-  character: {fileID: 1137130303}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &713991998
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2344,7 +2292,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &713992007
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -2394,7 +2342,7 @@ MonoBehaviour:
   callMode: 1
 --- !u!114 &713992009
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -2477,7 +2425,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 983.6632
     y: 425.74524
-    width: 153.44829
+    width: 154.65117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2683,7 +2631,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 958.8098
     y: 181.58871
-    width: 168.96553
+    width: 170.93024
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2753,7 +2701,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 630.99274
     y: 104.928024
-    width: 139.65518
+    width: 140.69768
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2762,7 +2710,6 @@ MonoBehaviour:
   description: Decide to eat healthy food
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 713992031}
   - {fileID: 713992030}
   - {fileID: 713992025}
 --- !u!114 &713992025
@@ -2895,50 +2842,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 713991952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 92
+  itemId: 151
   indentLevel: 0
-  storyText: Oh.... hey.
-  description: 
-  character: {fileID: 473459346}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &713992031
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 713991952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 91
-  indentLevel: 0
-  storyText: 'Hey Blanket! '
-  description: 
-  character: {fileID: 1137130303}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Player: What do you want to talk about?\r\nBlanket: Anything..."
 --- !u!114 &713992032
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3334,7 +3245,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Blanket: That was nice...  thanks. '
+    stringVal: "Blanket: There\u2019s no one else I can really sit in silence with
+      like this.\r\nPlayer: You never know how important peace and quiet is until
+      you need it.\r\n"
 --- !u!114 &713992050
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3373,7 +3286,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1380.836
     y: 371.46335
-    width: 136.20691
+    width: 145.34885
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3656,7 +3569,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1383.1459
     y: 415.57703
-    width: 131.03448
+    width: 138.3721
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3673,7 +3586,7 @@ MonoBehaviour:
   - {fileID: 713992057}
 --- !u!114 &713992064
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -3700,7 +3613,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &713992065
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -3727,7 +3640,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &713992066
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -3754,7 +3667,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &713992067
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -3771,7 +3684,7 @@ MonoBehaviour:
     stringVal: Next Group
 --- !u!114 &713992068
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -3788,7 +3701,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &713992069
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713991952}
@@ -4597,12 +4510,6 @@ SpriteMask:
   m_FrontSortingOrder: 0
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
---- !u!114 &1137130303 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114807294005114778, guid: f925cb343abebf14dac820e6b4da255a,
-    type: 2}
-  m_PrefabInternal: {fileID: 808736232}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &1162770395
 GameObject:
   m_ObjectHideFlags: 0

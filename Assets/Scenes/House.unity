@@ -1400,12 +1400,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!114 &496886869 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114771519821070258, guid: 944ee0aaa5afe2e4f8263723d62f7d43,
-    type: 2}
-  m_PrefabInternal: {fileID: 217997395}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!4 &535514018 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: d024aaa09f4080d448d16f62d1a97b0b, type: 2}
@@ -3073,22 +3067,11 @@ GameObject:
   - component: {fileID: 1550836954}
   - component: {fileID: 1550836956}
   - component: {fileID: 1550836955}
-  - component: {fileID: 1550836971}
-  - component: {fileID: 1550836970}
-  - component: {fileID: 1550836969}
-  - component: {fileID: 1550836968}
-  - component: {fileID: 1550836967}
-  - component: {fileID: 1550836966}
-  - component: {fileID: 1550836965}
-  - component: {fileID: 1550836964}
   - component: {fileID: 1550836963}
-  - component: {fileID: 1550836962}
-  - component: {fileID: 1550836961}
   - component: {fileID: 1550836960}
   - component: {fileID: 1550836959}
   - component: {fileID: 1550836958}
   - component: {fileID: 1550836957}
-  - component: {fileID: 1550836972}
   - component: {fileID: 1550836973}
   - component: {fileID: 1550836974}
   - component: {fileID: 1550836975}
@@ -3096,8 +3079,6 @@ GameObject:
   - component: {fileID: 1550836980}
   - component: {fileID: 1550836979}
   - component: {fileID: 1550836978}
-  - component: {fileID: 1550836997}
-  - component: {fileID: 1550836996}
   - component: {fileID: 1550836987}
   - component: {fileID: 1550836942}
   - component: {fileID: 1550836938}
@@ -3135,6 +3116,8 @@ GameObject:
   - component: {fileID: 1550836977}
   - component: {fileID: 1550836983}
   - component: {fileID: 1550836982}
+  - component: {fileID: 1550836962}
+  - component: {fileID: 1550836961}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Player
@@ -3155,11 +3138,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 43.356514, y: -438.36707}
+  scrollPos: {x: 268.912, y: -255.17343}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 400
-  zoom: 0.9100001
+  zoom: 0.6100004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3167,7 +3150,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1550836971}
+  - {fileID: 1550837003}
   selectedCommands: []
   variables:
   - {fileID: 1550836933}
@@ -3336,7 +3319,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26.897354
     y: 166.68954
-    width: 157.69229
+    width: 154.91797
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3426,7 +3409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 426.75476
     y: 335.9311
-    width: 122.527466
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3522,7 +3505,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 37.048782
     y: 280.0488
-    width: 162.08789
+    width: 156.55731
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3572,7 +3555,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.89456
     y: 267.31076
-    width: 136.81317
+    width: 130.32782
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3856,7 +3839,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 29.339342
     y: 498.31198
-    width: 162.08789
+    width: 156.55731
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3869,52 +3852,40 @@ MonoBehaviour:
   - {fileID: 1550836958}
 --- !u!114 &1550836961
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 58
+  itemId: 156
   indentLevel: 0
-  text: Veg Out
-  description: 
-  targetBlock: {fileID: 1550836971}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Scenes/Couch
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &1550836962
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550836926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 57
+  itemId: 155
   indentLevel: 0
-  text: Talk
-  description: 
-  targetBlock: {fileID: 1550836967}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!114 &1550836963
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3941,211 +3912,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 1550836962}
   - {fileID: 1550836961}
---- !u!114 &1550836964
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 55
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: Scenes/Couch
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &1550836965
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 54
-  indentLevel: 0
-  duration: 1
-  targetAlpha: 1
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
---- !u!114 &1550836966
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 53
-  indentLevel: 0
-  storyText: 'Hey Blanket! '
-  description: 
-  character: {fileID: 1438302084}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1550836967
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 406.18515
-    y: 485.57404
-    width: 150
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 63
-  blockName: TalkWithBlanket
-  description: Decide to eat healthy food
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1550836966}
-  - {fileID: 1550836972}
-  - {fileID: 1550836965}
-  - {fileID: 1550836964}
---- !u!114 &1550836968
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 51
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: Scenes/Couch
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &1550836969
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 50
-  indentLevel: 0
-  duration: 1
-  targetAlpha: 1
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
---- !u!114 &1550836970
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 49
-  indentLevel: 0
-  storyText: Mind if I sit here and zone out?
-  description: 
-  character: {fileID: 1438302084}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1550836971
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 419.04538
-    y: 554.19385
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 62
-  blockName: VegOut
-  description: Decide to eat leftovers, to treat yourself
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1550836970}
-  - {fileID: 1550836969}
-  - {fileID: 1550836968}
---- !u!114 &1550836972
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 66
-  indentLevel: 0
-  storyText: Oh.... hey.
-  description: 
-  character: {fileID: 496886869}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1550836973
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4191,7 +3957,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.7657
     y: 714.43353
-    width: 133.51648
+    width: 127.04913
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4288,7 +4054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  storyText: "It's our old fENES\u2122 computer."
+  storyText: It's our old computer.
   description: 
   character: {fileID: 1438302084}
   portrait: {fileID: 0}
@@ -4316,7 +4082,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1.059494
     y: 708.6098
-    width: 185.16483
+    width: 177.86877
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4327,8 +4093,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 1550836980}
   - {fileID: 1550836979}
-  - {fileID: 1550836996}
-  - {fileID: 1550836997}
 --- !u!114 &1550836982
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4382,54 +4146,6 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Player: I\u2019m really hungry, what would you like to eat?\r\nBlanket:
       ...\n"
---- !u!114 &1550836996
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 96
-  indentLevel: 0
-  text: Internet
-  description: 
-  targetBlock: {fileID: 1550836975}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1550836997
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550836926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 95
-  indentLevel: 0
-  text: Game
-  description: 
-  targetBlock: {fileID: 1550836975}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &1550836998
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4456,7 +4172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 118
   indentLevel: 0
-  text: Clean Sink
+  text: Examine Sink
   description: 
   targetBlock: {fileID: 1550837007}
   hideIfVisited: 0
@@ -4508,7 +4224,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.667784
     y: 937.70056
-    width: 151.09889
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

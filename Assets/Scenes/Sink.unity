@@ -3835,6 +3835,12 @@ GameObject:
   - component: {fileID: 2120348153}
   - component: {fileID: 2120348144}
   - component: {fileID: 2120348143}
+  - component: {fileID: 2120348150}
+  - component: {fileID: 2120348149}
+  - component: {fileID: 2120348156}
+  - component: {fileID: 2120348155}
+  - component: {fileID: 2120348154}
+  - component: {fileID: 2120348157}
   m_Layer: 0
   m_Name: Sink
   m_TagString: Untagged
@@ -3891,8 +3897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 171.7233
-    y: 197.19139
+    x: 245.12749
+    y: 370.5955
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3976,7 +3982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 46.07777, y: -58.316177}
+  scrollPos: {x: 118.60947, y: 93.707054}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -3988,7 +3994,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2120348135}
+  - {fileID: 2120348149}
   selectedCommands: []
   variables: []
   description: 
@@ -4027,7 +4033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 129
   indentLevel: 0
-  text: Throw out Bottles in sink
+  text: Move items out of way
   description: 
   targetBlock: {fileID: 2120348142}
   hideIfVisited: 0
@@ -4053,12 +4059,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 444.62793
     y: 151.17645
-    width: 182.97871
+    width: 208.51064
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 121
-  blockName: Throw out stuff in Sink
+  blockName: Move Items out of the way
   description: 'Clean with extreme prejudice. '
   eventHandler: {fileID: 0}
   commandList:
@@ -4167,7 +4173,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Player: Dick move me... dick move. (placec holder)'
+    stringVal: "Player: Eh, we can always deal with it later. I\u2019ll just move
+      some of it out of the way."
 --- !u!114 &2120348146
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4208,7 +4215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 128
   indentLevel: 0
-  text: Reorganize Cabinet
+  text: Put items in medicine cabinet
   description: 
   targetBlock: {fileID: 2120348148}
   hideIfVisited: 0
@@ -4245,6 +4252,58 @@ MonoBehaviour:
   commandList:
   - {fileID: 2120348151}
   - {fileID: 2120348144}
+--- !u!114 &2120348149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120348132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 416.2845
+    y: 283.95224
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 139
+  blockName: Bad End
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2120348154}
+  - {fileID: 2120348155}
+--- !u!114 &2120348150
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120348132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 173.94376
+    y: 278.63342
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 134
+  blockName: Good End
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2120348157}
+  - {fileID: 2120348156}
 --- !u!114 &2120348151
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4260,7 +4319,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Player: Reorganizing the sink... classic me. (placeholder)\r\n"
+    stringVal: "Player: That\u2019s okay, I\u2019ll put everything in the medicine
+      cabinet."
 --- !u!114 &2120348152
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4276,7 +4336,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Player: Hey This is sink placeholder text!'
+    stringVal: "Player: Oh woah the sink is so cluttered!\r\nBlanket: Sorry, sometimes
+      I forget to put things back in the morning.\r"
 --- !u!114 &2120348153
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4297,3 +4358,79 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &2120348154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120348132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 137
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Player: It\u2019s not really urgent, as long as you can do what you
+      need to do, it\u2019s okay.\r\nBlanket: Thanks for understanding.\r\nBlanket:
+      I\u2019ve gotten used to organized chaos in a way...\r\n"
+--- !u!114 &2120348155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120348132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 136
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 2120348135}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &2120348156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120348132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 135
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 2120348135}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &2120348157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120348132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 138
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Blanket: Thanks for cleaning up.\r\nPlayer: Y\u2019know, even doing
+      something small like this can help your space feel a lot better.\r\nBlanket:
+      I know you\u2019re right\u2026\r"

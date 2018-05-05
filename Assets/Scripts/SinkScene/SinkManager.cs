@@ -107,7 +107,7 @@ public class SinkManager : MonoBehaviour {
         {
             obstructions--;
             Debug.Log("Stuff in the sink: " + obstructions);
-            if (obstructions <= 0)
+            if (obstructions <= 0 && positiveAction == false)
             {
                 Debug.Log("Sink is clear.");
             }
@@ -116,7 +116,16 @@ public class SinkManager : MonoBehaviour {
 
     public void EndGame()
     {
-        flowChart.ExecuteIfHasBlock("Scene End");
+        if (positiveAction == true)
+        {
+            Debug.Log("Good end");
+            flowChart.ExecuteIfHasBlock("Good End");
+        }
+        else {
+            Debug.Log("Good end");
+            flowChart.ExecuteIfHasBlock("Bad End");
+        }
+            
     }
 
     public void SetPositiveFlag(bool pos)
