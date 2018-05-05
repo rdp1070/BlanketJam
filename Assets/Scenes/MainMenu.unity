@@ -295,11 +295,6 @@ Prefab:
     m_Modifications:
     - target: {fileID: 224029801809767202, guid: 7a7835be1cccd614599f189a34606e03,
         type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 224029801809767202, guid: 7a7835be1cccd614599f189a34606e03,
-        type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -613,11 +608,6 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224197946533724856, guid: 7a7835be1cccd614599f189a34606e03,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -229
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a7835be1cccd614599f189a34606e03, type: 2}
   m_IsPrefabParent: 0
@@ -676,7 +666,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b72bc34a72e870945a62dba028c817cb, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0

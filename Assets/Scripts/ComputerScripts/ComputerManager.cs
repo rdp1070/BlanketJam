@@ -132,6 +132,7 @@ public class ComputerManager : MonoBehaviour
 
                         }
                     }
+                    flowChart.SendFungusMessage("Email");
                 }
                 else
                 {
