@@ -1293,7 +1293,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1685823332}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1685823349}
   variables: []
   description: 
   stepPause: 0
@@ -2384,7 +2385,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: House
+    stringVal: Scenes/ThanksForPlaying
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!1 &1708176236
@@ -2423,7 +2424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000018477, y: 364}
+  m_AnchoredPosition: {x: -0.000018477, y: -379}
   m_SizeDelta: {x: 1300, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708176238
@@ -2579,7 +2580,7 @@ Prefab:
     - target: {fileID: 224752966368617158, guid: 8f0ccd7fe3c02c342ab1f052c585c2c8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 363
+      value: -380
       objectReference: {fileID: 0}
     - target: {fileID: 224752966368617158, guid: 8f0ccd7fe3c02c342ab1f052c585c2c8,
         type: 2}

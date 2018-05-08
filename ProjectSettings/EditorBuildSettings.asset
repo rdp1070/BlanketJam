@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sink.unity
     guid: 9d64b225fd81f174b93953056cd35ce9
+  - enabled: 1
+    path: Assets/Scenes/ThanksForPlaying.unity
+    guid: b657987db176e3144aff4b40f15b27ad

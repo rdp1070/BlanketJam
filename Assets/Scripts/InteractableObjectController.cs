@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Fungus;
 
-public class InteractableObjectController : MonoBehaviour {
+public class InteractableObjectController : Clickable2D {
 
     public Flowchart flowchart;
     public string FungusMessage;

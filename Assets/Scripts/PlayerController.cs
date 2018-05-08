@@ -19,13 +19,10 @@ public class PlayerController : MonoBehaviour
 
     public void Interact()
     {
-        Debug.Log("You're doing it fam, you're interacting. ");
     }
 
     public void EndInteract()
     {
-
-        Debug.Log("You have done what you came to do.");
     }
 
     void OnTriggerEnter2D(Collider2D other)

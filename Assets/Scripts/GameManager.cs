@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public TextBoxManager[] textBoxManagers;
     public PlayerManager playerManager;
     public InteractableManager interactableManager;
 

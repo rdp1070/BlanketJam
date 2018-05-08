@@ -164,7 +164,7 @@ Camera:
   m_GameObject: {fileID: 408484732}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.07785467, g: 0.1162053, b: 0.17647058, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -968,9 +968,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2043686000}
-  selectedCommands:
-  - {fileID: 2043686006}
+  - {fileID: 2043685997}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
