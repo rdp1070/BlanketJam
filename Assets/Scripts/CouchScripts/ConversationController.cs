@@ -94,9 +94,11 @@ public class ConversationController : MonoBehaviour
 
     private string CheckIfInOptions(string inputString)
     {
+        // Ignor all of these keys
         if (inputString != null && inputString != "" && !Input.GetKeyDown(KeyCode.Backspace)
             && !Input.GetKeyDown(KeyCode.LeftShift) && !Input.GetKeyDown(KeyCode.RightShift))
         {
+            // check if the input string exists.
             if (inputString.Length >= 1)
             {
                 var negative_substr = activeDialogOptionNegative;
@@ -111,10 +113,10 @@ public class ConversationController : MonoBehaviour
                     positive_substr = activeDialogOptionPositive.Substring(0, inputString.Length);
                 }
 
-
                 inputString += CheckStrangeCharacters(activeDialogOptionNegative);
-                if (negative_substr.Contains(inputString))
+                if (inputString.Equals(negative_substr, System.StringComparison.CurrentCultureIgnoreCase))
                 {
+                    inputString = negative_substr;
                     // set the variable in the flowchart
                     if (flowchart != null)
                     {
@@ -124,9 +126,10 @@ public class ConversationController : MonoBehaviour
                 } // end if negative
 
                 inputString += CheckStrangeCharacters(activeDialogOptionPositive);
-                if (positive_substr.Contains(inputString))
+                //if (positive_substr.Contains(inputString))
+                if (inputString.Equals(positive_substr, System.StringComparison.CurrentCultureIgnoreCase))
                 {
-
+                    inputString = positive_substr;
                     // set the variable in the flowchart
                     if (flowchart != null)
                     {
@@ -134,8 +137,9 @@ public class ConversationController : MonoBehaviour
                         flowchart.ExecuteIfHasBlock("Correct Positive Text");
                     }
                 } // end if positive
-                if (!positive_substr.Contains(inputString) && !(negative_substr.Contains(inputString)))
-                {
+                if (!inputString.Equals(positive_substr, System.StringComparison.CurrentCultureIgnoreCase)
+                        && !inputString.Equals(negative_substr, System.StringComparison.CurrentCultureIgnoreCase))
+                    {
                     Debug.Log("WRONG");
                     Debug.Log(inputString);
                     flowchart.ExecuteIfHasBlock("Shake Blocks");
@@ -185,7 +189,7 @@ public class ConversationController : MonoBehaviour
             // call the flowchart say function
             return true;
         }
-        else if (inputString == activeDialogOptionNegative)
+        else if (inputString.Equals(activeDialogOptionNegative, System.StringComparison.CurrentCultureIgnoreCase))
         {
             Debug.Log("Debby Downer");
             flowchart.SetStringVariable("inputString", activeDialogOptionNegative);
