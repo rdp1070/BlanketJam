@@ -1,0 +1,28 @@
+title: Introspect.png
+tags: start
+colorID: 6
+position: 561,167
+---
+title: Test Title
+---
+Player: Hey, this is a test file...
+Blanket: That it is... A test file...
+Player: Ever wonder why... like, our creators made us?
+[[No. Why would I wonder that?|WhyNode]]
+[[Like... literally every waking moment.|LikeNode]]
+===
+title: LikeNode
+tags: 
+colorID: 0
+position: 747,433
+---
+Player: Right??? Like why do we exist?
+===
+title: WhyNode
+tags: 
+colorID: 0
+position: 396,439
+---
+Player: I don't know why I asked... Sometimes I just doesn't feel up to me, y'know?
+Like my life is a game or something. 
+===

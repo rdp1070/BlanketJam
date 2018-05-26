@@ -1,6 +1,0 @@
-This is a test text file
-this is a new line
-TEST: Short
-Memes: this is a very very very long line, that may run over the end of the screen
-Player: a e s t h e t i c
-[choice? | choice ] <end>
