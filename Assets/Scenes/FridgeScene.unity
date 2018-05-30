@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 70251313}
   - component: {fileID: 70251315}
   m_Layer: 0
-  m_Name: Health (1)
+  m_Name: Treat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -72756387
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7bb490b9c31dd6645b732a7abb3236c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -332,7 +332,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -72756387
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 69ac1ffc73e84714897acb8f12bb83e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 310109833}
   - component: {fileID: 310109834}
   m_Layer: 14
-  m_Name: GameObject
+  m_Name: HealthColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 528853708}
   - component: {fileID: 528853707}
   m_Layer: 0
-  m_Name: SinkCollider (3)
+  m_Name: bounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 1122380394}
   - component: {fileID: 1122380393}
   m_Layer: 0
-  m_Name: SinkCollider
+  m_Name: bounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -924,6 +924,8 @@ GameObject:
   - component: {fileID: 1156696635}
   - component: {fileID: 1156696634}
   - component: {fileID: 1156696637}
+  - component: {fileID: 1156696649}
+  - component: {fileID: 1156696648}
   m_Layer: 0
   m_Name: Refrigerator
   m_TagString: Untagged
@@ -1094,8 +1096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.18558
-    y: 162.54637
+    x: 74.18558
+    y: 255.54639
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1194,9 +1196,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1156696644}
+  - {fileID: 1156696649}
   selectedCommands:
-  - {fileID: 1156696636}
+  - {fileID: 1156696648}
   variables:
   - {fileID: 1156696638}
   - {fileID: 1156696635}
@@ -1240,6 +1242,51 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Player: Ah that hit the spot!\r\nBlanket: Yeah! Thanks for eating
       with me.\r"
+--- !u!114 &1156696648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156696633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Player: Oh my god... there is so much stuff in here....
+
+
+      Blanket: Yeah, I don''t know how it got this bad. Just get the food for now,
+      and ignore my filth...'
+--- !u!114 &1156696649
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156696633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 161.45294
+    y: 155.6389
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 15
+  blockName: Complaint
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1156696648}
 --- !u!1 &1208738158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,10 +1441,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1215574451}
-  - component: {fileID: 1215574453}
   - component: {fileID: 1215574452}
   m_Layer: 14
-  m_Name: GameObject
+  m_Name: TreatCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1410,14 +1456,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215574450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: -0.11, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 70251312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1215574452
-CircleCollider2D:
+--- !u!61 &1215574452
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1428,24 +1474,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.070311785, y: 0.5500822}
+  m_Offset: {x: 0, y: -0.016205788}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.37, y: 2.99}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.62403035
---- !u!58 &1215574453
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1215574450}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.3407402, y: -0.3316908}
-  serializedVersion: 2
-  m_Radius: 0.8473511
+  m_Size: {x: 2.2032108, y: 2.309372}
+  m_EdgeRadius: 0
 --- !u!1 &1243040571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1804,7 @@ GameObject:
   - component: {fileID: 1733922336}
   - component: {fileID: 1733922335}
   m_Layer: 0
-  m_Name: Take Out (1)
+  m_Name: Take Out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2274,7 +2315,7 @@ GameObject:
   - component: {fileID: 2142007043}
   - component: {fileID: 2142007042}
   m_Layer: 0
-  m_Name: SinkCollider (4)
+  m_Name: bounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
