@@ -14,7 +14,7 @@ public class SinkManager : MonoBehaviour {
     public float minHeight;
     public float maxHeight;
     bool objectHeld;
-    Vector3 worldPoint = Vector3.zero;
+    protected Vector3 worldPoint = Vector3.zero;
     public Fungus.Flowchart flowChart;
 
     // Use this for initialization

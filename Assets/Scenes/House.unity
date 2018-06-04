@@ -989,6 +989,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114807294005114778, guid: f925cb343abebf14dac820e6b4da255a,
+        type: 2}
+      propertyPath: nameText
+      value: ${PlayerName}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f925cb343abebf14dac820e6b4da255a, type: 2}
   m_IsPrefabParent: 0
@@ -3176,6 +3181,7 @@ GameObject:
   - component: {fileID: 1550837038}
   - component: {fileID: 1550837036}
   - component: {fileID: 1550837037}
+  - component: {fileID: 1550837040}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Player
@@ -3218,6 +3224,7 @@ MonoBehaviour:
   - {fileID: 1550836973}
   - {fileID: 1550837012}
   - {fileID: 1550837035}
+  - {fileID: 1550837040}
   description: 'The Manager for the Player
 
 '
@@ -5721,6 +5728,20 @@ MonoBehaviour:
   indentLevel: 0
   key: HealthyFood
   variable: {fileID: 1550837035}
+--- !u!114 &1550837040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550836926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: PlayerName
+  value: 
 --- !u!1 &1552373491 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1907225812962040, guid: 722bf4cc0bf6d754cb059147ef664437,
