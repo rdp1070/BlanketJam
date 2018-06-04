@@ -7,8 +7,6 @@ public class FridgeObstacleController : ClickableObject {
     public int layer; // set before running
     //public int depth;  //implement later.
 
-    //public GameObject Manager;
-
     protected int currentLane; // determined by Manager
     public int width; // how many lanes wide 
     public int height; // how many sections tall.
@@ -55,9 +53,7 @@ public class FridgeObstacleController : ClickableObject {
 
     public void OnMouseEnter()
     {
-        if (Input.GetMouseButtonDown(1)) {
-            Debug.Log("Mouse down when entering.");
-        }
+        // write code to detect when holding an object, and entering another object.
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -68,12 +64,22 @@ public class FridgeObstacleController : ClickableObject {
 
         try
         {
-            var collision_layer = collision.gameObject.GetComponent<FridgeObstacleController>().layer;
-            Debug.Log(collision_layer);
+            var fridgeObstacle = collision.gameObject.GetComponent<FridgeObstacleController>();
+            var collision_layer = fridgeObstacle.layer;
+            //Debug.Log(collision_layer);
             if (collision_layer != this.layer)
             {
+                Debug.Log("Not Same layer, I am leaving.");
                 Physics2D.IgnoreCollision(collider, collision.collider);
             }
+            else {
+                //if they collide while you are holding down the mouse button.
+                // somehow make them drop it. 
+                owner.ReleaseObject();
+            }
+
+           
+            
         }
         catch (System.Exception ex)
         {
