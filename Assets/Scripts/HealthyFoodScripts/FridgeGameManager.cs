@@ -36,7 +36,7 @@ public class FridgeGameManager : SinkManager {
         foods = GetComponentsInChildren<Food>(); // get all the food on startup
 
         Obstacles = GetComponentsInChildren<FridgeObstacleController>().ToList(); // this gets a list of obstacles you set up in the scene at complie time.
-        numLayers = Obstacles.OrderBy(item => item.layer).FirstOrDefault().layer; // this gets the layer that is the furthest back
+        numLayers = Obstacles.OrderByDescending(item => item.layer).FirstOrDefault().layer; // this gets the layer that is the furthest back
 
         ApplyObstacleShading();
 
@@ -55,9 +55,10 @@ public class FridgeGameManager : SinkManager {
     public void ApplyObstacleShading() {
         foreach (FridgeObstacleController obstacle in Obstacles)
         {
-            var color_val = (255 - DarkestColor.r) / numLayers;
-            var current_color = 255 - (color_val * obstacle.layer); // white minus portion of darkness determined by how far back in the fridge it is.
-            obstacle.spriteRenderer.color = new Color(current_color, current_color, current_color);
+            var color_val = (1 - DarkestColor.r) / numLayers;
+            var current_color = 1 - (color_val * obstacle.layer); // white minus portion of darkness determined by how far back in the fridge it is.
+            obstacle.spriteRenderer.sortingOrder = numLayers - obstacle.layer + 1; // put darker obstacles in the back of the fridge.
+            obstacle.spriteRenderer.color = new Color(current_color, current_color, current_color); // set the color.
         }
     }
 
@@ -71,11 +72,6 @@ public class FridgeGameManager : SinkManager {
         // or add different functionality here, but this is all we need for now.
         return new FridgeObstacleController(defaultSprite, 1, 1,1);
     }
-
-    //[ContextMenu("Make New Fridge Obstacle")]
-    //public void AddNewObstacle() {
-    //    Obstacles.Add(GenerateNewObstacle());
-    //}
 
     // Update is called once per frame
     void Update()
@@ -101,7 +97,7 @@ public class FridgeGameManager : SinkManager {
         if (test != null)
         {
             obstructions++;
-            Debug.Log("Stuff in the sink: " + obstructions);
+            Debug.Log("Stuff in the fridge: " + obstructions);
         }
     }
 
@@ -111,10 +107,10 @@ public class FridgeGameManager : SinkManager {
         if (test != null)
         {
             obstructions--;
-            Debug.Log("Stuff in the sink: " + obstructions);
+            Debug.Log("Stuff in the fridge: " + obstructions);
             if (obstructions <= 0 && positiveAction == false)
             {
-                Debug.Log("Sink is clear.");
+                Debug.Log("fridge is clear.");
             }
         }
     }

@@ -87,6 +87,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f9549461bd0d5478faf65af081264d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickEnabled: 1
+  hoverCursor: {fileID: 0}
+  useEventSystem: 0
   flowchart: {fileID: 0}
   FungusMessage: 
   render: {fileID: 0}
@@ -103,6 +106,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
